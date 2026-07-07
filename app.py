@@ -3,6 +3,7 @@
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 import argparse
+from functools import partial
 import os
 import webbrowser
 
@@ -21,7 +22,7 @@ class PortfolioHandler(SimpleHTTPRequestHandler):
 
     def do_GET(self) -> None:
         if self.path in {"/", "/index.html"}:
-            self.path = "/templates/index.html"
+            self.path = "/index.html"
         super().do_GET()
 
 
@@ -34,7 +35,8 @@ def main() -> None:
 
     os.chdir(ROOT)
     url = f"http://{args.host}:{args.port}"
-    server = ThreadingHTTPServer((args.host, args.port), PortfolioHandler)
+    handler = partial(PortfolioHandler, directory=str(ROOT))
+    server = ThreadingHTTPServer((args.host, args.port), handler)
     print(f"Vinay Manke portfolio is live at {url}")
     if args.open:
         webbrowser.open(url)

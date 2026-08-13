@@ -404,7 +404,7 @@ img { display: block; max-width: 100%; }
 .movies-section, .ott-section, .digital-section { padding-top: 72px; }
 .featured-work-grid, .ott-grid { grid-template-columns: repeat(5, 1fr); }
 .movies-grid { grid-template-columns: repeat(4, 1fr); }
-.digital-grid { grid-template-columns: repeat(3, 1fr); }
+.digital-grid { grid-template-columns: repeat(4, 1fr); }
 .movies-grid .project-card:nth-last-child(2) { grid-column: 2; }
 .movies-grid .project-card:last-child { grid-column: 3; }
 .project-card {
@@ -645,7 +645,7 @@ footer .logo { color: var(--white); font-size: 24px; }
   .work-grid { grid-template-columns: repeat(3, 1fr); }
   .featured-work-grid, .ott-grid { grid-template-columns: repeat(5, 1fr); }
   .movies-grid { grid-template-columns: repeat(3, 1fr); }
-  .digital-grid { grid-template-columns: repeat(3, 1fr); }
+  .digital-grid { grid-template-columns: repeat(4, 1fr); }
   .movies-grid .project-card:nth-last-child(2),
   .movies-grid .project-card:last-child { grid-column: auto; }
   .project-card:nth-child(even) { transform: none; }

@@ -402,7 +402,8 @@ img { display: block; max-width: 100%; }
 .work-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px; }
 .featured-work-section { padding-bottom: 72px; }
 .movies-section, .ott-section, .digital-section { padding-top: 72px; }
-.featured-work-grid, .ott-grid { grid-template-columns: repeat(5, 1fr); }
+.featured-work-grid { grid-template-columns: repeat(7, 1fr); }
+.ott-grid { grid-template-columns: repeat(5, 1fr); }
 .movies-grid { grid-template-columns: repeat(4, 1fr); }
 .digital-grid { grid-template-columns: repeat(4, 1fr); }
 .movies-grid .project-card:nth-last-child(2) { grid-column: 2; }
@@ -643,7 +644,8 @@ footer .logo { color: var(--white); font-size: 24px; }
   .about-grid { grid-template-columns: 1fr; }
   .portrait-card { height: 380px; }
   .work-grid { grid-template-columns: repeat(3, 1fr); }
-  .featured-work-grid, .ott-grid { grid-template-columns: repeat(5, 1fr); }
+  .featured-work-grid { grid-template-columns: repeat(7, 1fr); }
+  .ott-grid { grid-template-columns: repeat(5, 1fr); }
   .movies-grid { grid-template-columns: repeat(3, 1fr); }
   .digital-grid { grid-template-columns: repeat(4, 1fr); }
   .movies-grid .project-card:nth-last-child(2),

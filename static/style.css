@@ -411,8 +411,6 @@ img { display: block; max-width: 100%; }
 .featured-work-grid .project-card:last-child { grid-column: 6 / span 2; }
 .movies-grid .project-card:nth-last-child(2) { grid-column: 2; }
 .movies-grid .project-card:last-child { grid-column: 3; }
-.digital-grid .project-card:nth-last-child(2) { grid-column: 2; }
-.digital-grid .project-card:last-child { grid-column: 3; }
 .project-card {
   position: relative;
   aspect-ratio: 16 / 9;
@@ -763,8 +761,6 @@ footer .logo { color: var(--white); font-size: 24px; }
   .featured-work-grid .project-card,
   .featured-work-grid .project-card:nth-last-child(2),
   .featured-work-grid .project-card:last-child { grid-column: auto; }
-  .digital-grid .project-card:nth-last-child(2),
-  .digital-grid .project-card:last-child { grid-column: auto; }
   .project-info { left: 11px; right: 11px; bottom: 11px; }
   .project-info b { font-size: 19px; }
   .play { width: 46px; height: 46px; }
